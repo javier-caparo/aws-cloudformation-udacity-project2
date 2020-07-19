@@ -1,0 +1,127 @@
+[ec2-user@ip-172-31-12-189 aws-cloudformation-udacity-project2]$ aws cloudformation describe-stacks --stack-name udagram-stack
+{
+    "Stacks": [
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:156823553040:stack/udagram-stack/d6636350-c9b6-11ea-845a-0231aca8377c",
+            "StackName": "udagram-stack",
+            "Description": "Javier Caparo / Udagram Project - Udacity Dev Ops Nanodegree.\n",
+            "Parameters": [
+                {
+                    "ParameterKey": "PrivateSubnet1CIDR",
+                    "ParameterValue": "10.0.30.0/24"
+                },
+                {
+                    "ParameterKey": "KeyPairName",
+                    "ParameterValue": "jc-udacity-devops"
+                },
+                {
+                    "ParameterKey": "PublicSubnet2CIDR",
+                    "ParameterValue": "10.0.20.0/24"
+                },
+                {
+                    "ParameterKey": "VpcCIDR",
+                    "ParameterValue": "10.0.0.0/16"
+                },
+                {
+                    "ParameterKey": "EnvironmentName",
+                    "ParameterValue": "MyUdagramProject"
+                },
+                {
+                    "ParameterKey": "PrivateSubnet2CIDR",
+                    "ParameterValue": "10.0.40.0/24"
+                },
+                {
+                    "ParameterKey": "WebServerCapacity",
+                    "ParameterValue": "4"
+                },
+                {
+                    "ParameterKey": "PublicSubnet1CIDR",
+                    "ParameterValue": "10.0.10.0/24"
+                },
+                {
+                    "ParameterKey": "InstanceType",
+                    "ParameterValue": "t2.small"
+                }
+            ],
+            "CreationTime": "2020-07-19T11:56:10.989000+00:00",
+            "RollbackConfiguration": {},
+            "StackStatus": "CREATE_COMPLETE",
+            "DisableRollback": false,
+            "NotificationARNs": [],
+            "Capabilities": [
+                "CAPABILITY_NAMED_IAM"
+            ],
+            "Outputs": [
+                {
+                    "OutputKey": "PrivateSubnet1",
+                    "OutputValue": "subnet-06da2291ef6cddb68",
+                    "Description": "A reference to the private subnet in the 1st Availability Zone",
+                    "ExportName": "MyUdagramProject-PRIV-SN-1"
+                },
+                {
+                    "OutputKey": "WebAppLoadBalancerDNSName",
+                    "OutputValue": "http://udagr-WebAp-S2YEAO61BWAI-33908833.us-west-2.elb.amazonaws.com",
+                    "Description": "DNS name or Public URL of the Load Balancer",
+                    "ExportName": "MyUdagramProject-LB-DNSName"
+                },
+                {
+                    "OutputKey": "PrivateSubnet2",
+                    "OutputValue": "subnet-075c172231bd77af0",
+                    "Description": "A reference to the private subnet in the 2nd Availability Zone",
+                    "ExportName": "MyUdagramProject-PRIV-SN-2"
+                },
+                {
+                    "OutputKey": "PrivateSubnets",
+                    "OutputValue": "subnet-06da2291ef6cddb68,subnet-075c172231bd77af0",
+                    "Description": "A list of the private subnets",
+                    "ExportName": "MyUdagramProject-PRIV-NETS"
+                },
+                {
+                    "OutputKey": "VPC",
+                    "OutputValue": "vpc-09514a762e656f32f",
+                    "Description": "A reference to the created VPC",
+                    "ExportName": "MyUdagramProject-VPCID"
+                },
+                {
+                    "OutputKey": "PublicSubnets",
+                    "OutputValue": "subnet-0d60773ad070a50b5,subnet-09647ca0c2875210f",
+                    "Description": "A list of the public subnets",
+                    "ExportName": "MyUdagramProject-PUB-NETS"
+                },
+                {
+                    "OutputKey": "WebServerSecGroup",
+                    "OutputValue": "sg-02f5671437839d349",
+                    "Description": "A reference to the security group for Load balancer"
+                },
+                {
+                    "OutputKey": "PublicSubnet2",
+                    "OutputValue": "subnet-09647ca0c2875210f",
+                    "Description": "A reference to the public subnet in the 2nd Availability Zone",
+                    "ExportName": "MyUdagramProject-PUB-SN-2"
+                },
+                {
+                    "OutputKey": "LoadBalancerSecGroup",
+                    "OutputValue": "sg-0798713619554e3db",
+                    "Description": "A reference to the security group for Load balancer"
+                },
+                {
+                    "OutputKey": "PublicSubnet1",
+                    "OutputValue": "subnet-0d60773ad070a50b5",
+                    "Description": "A reference to the public subnet in the 1st Availability Zone",
+                    "ExportName": "MyUdagramProject-PUB-SN-1"
+                },
+                {
+                    "OutputKey": "BastionHostEIP",
+                    "OutputValue": "52.13.10.4",
+                    "Description": "The EIP for accessing BastionHost",
+                    "ExportName": "BastionHostEIP"
+                }
+            ],
+            "Tags": [],
+            "EnableTerminationProtection": false,
+            "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+            }
+        }
+    ]
+}

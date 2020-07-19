@@ -132,7 +132,7 @@ For the versions available, see the [tags on this repository](https://github.com
 
 ## Authors
 
-* **Javier Caparo** - *javier.caparo@gmail.com* - [WEbSite](http://javier-caparo.com/)
+* **Javier Caparo** - *javier.caparo@gmail.com* - [WebSite](http://javier-caparo.com/)
 
 ## License
 
