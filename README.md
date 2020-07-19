@@ -64,6 +64,10 @@ A step by step series of examples that tell you how to get a development env run
 | webapp-stack.yml | to create the infraestructure (VPCs , SUbnets, EIP, Security Groups) and the servers ( ELB, AutoScaling group, BAstionHost, WebServers, IAM ROles ) |
 | webapp-parameters.json | the parameters needed on the stack |
 
+- Diagram in Lucid Chart:
+[![Lucid Chart](https://app.lucidchart.com/invitations/accept/90973ab4-2135-4020-8d22-3028c819afbd)]
+
+- Template Designer in CloudFormation
 [![Template Designer](https://webapp-s3bucket-s3cloudfront-w5u9jy13vbmr.s3-us-west-2.amazonaws.com/webapp-template-designer.png)]
 
 ##  How to Running the templates
@@ -80,10 +84,12 @@ Example on how to execute the creation script:
 > ./create-stack.sh Udagram-Stack webapp-stack.yml webapp-parameters.json
 ```
 
-## Deployment
+## Tests
 
-Add additional notes about how to deploy this on a live system
-
+1. Checking your Web Server were installed with NGINX:
+```sh
+systemctl status nginx
+```
 ## Built With
 
 * [Visual Studio Code](http://www.dropwizard.io/1.0.2/docs/) - Used as IDE to code
