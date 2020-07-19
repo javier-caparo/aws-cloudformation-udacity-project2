@@ -1,5 +1,7 @@
 # Project :  Deploying a High-Availability Web Application Using AWS CloudFormation
 
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]
+
 Infrastructure-as-code (IAC) that automates the process of creating a secured and HA environment , deploying  a WebApp  (packaged and staged in AWS S3 Storage) into a cluster of NGINX Servers. The script contains all the configurations needed for a repeatable process so that the infrastructure can be discarded and recreated at will multiple times.
 
 ## Scenario to recreate:
@@ -7,6 +9,8 @@ Infrastructure-as-code (IAC) that automates the process of creating a secured an
 Your company is creating an Instagram clone called Udagram. Developers pushed the latest version of their code in a zip file located in a public S3 Bucket.
 You have been tasked with deploying the application, along with the necessary supporting software into its matching infrastructure.
 This needs to be done in an automated fashion so that the infrastructure can be discarded as soon as the testing team finishes their tests and gathers their results.
+
+[![AWS Cloudformation](https://cdn.lynda.com/video/504618-185-636144053204152091_338x600_thumb.jpg)]
 
 ## Getting Started
 
@@ -34,7 +38,7 @@ webapp-S3bucket.yml
 - The above file generated a S3 bucket named: 
 | Resource | Name |
 | ------ | ------ |
-| S3 | webapp-s3bucket-s3cloudfront-w5u9jy13vbmr [PlDb] | 
+| S3 | webapp-s3bucket-s3cloudfront-w5u9jy13vbmr | 
 
 - The "udacity_udagram.zip" file was added as document to that bucket , and contains the files needed to recreate the "Udagram Web Site":
 ```sh
@@ -56,9 +60,9 @@ A step by step series of examples that tell you how to get a development env run
 
 | Template | Description |
 | ------ | ------ |
-| webapp-s3.bucket.yml | to create the S3 bucket ythat will be used later [PlDb] |
-| webapp-stack.yml | to create the infraestructure (VPCs , SUbnets, EIP, Security Groups) and the servers ( ELB, AutoScaling group, BAstionHost, WebServers, IAM ROles ) [PlDb] |
-| webapp-parameters.json | the parameters needed on the stack [PlDb] |
+| webapp-s3.bucket.yml | to create the S3 bucket ythat will be used later |
+| webapp-stack.yml | to create the infraestructure (VPCs , SUbnets, EIP, Security Groups) and the servers ( ELB, AutoScaling group, BAstionHost, WebServers, IAM ROles ) |
+| webapp-parameters.json | the parameters needed on the stack |
 
 
 ##  How to Running the templates
@@ -95,9 +99,7 @@ For the versions available, see the [tags on this repository](https://github.com
 
 ## Authors
 
-* **Javier Caparo** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-
+* **Javier Caparo** - *javier.caparo@gmail.com* - [WEbSite](http://javier-caparo.com/)
 
 ## License
 
