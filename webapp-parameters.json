@@ -29,7 +29,7 @@
     },
     {
         "ParameterKey": "WebServerCapacity",
-        "ParameterValue": 4
+        "ParameterValue": "4"
     },
     {
         "ParameterKey": "KeyPairName",
