@@ -64,6 +64,7 @@ A step by step series of examples that tell you how to get a development env run
 | webapp-stack.yml | to create the infraestructure (VPCs , SUbnets, EIP, Security Groups) and the servers ( ELB, AutoScaling group, BAstionHost, WebServers, IAM ROles ) |
 | webapp-parameters.json | the parameters needed on the stack |
 
+[![Template Designer](https://webapp-s3bucket-s3cloudfront-w5u9jy13vbmr.s3-us-west-2.amazonaws.com/webapp-template-designer.png)]
 
 ##  How to Running the templates
 
