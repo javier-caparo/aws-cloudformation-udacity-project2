@@ -110,12 +110,15 @@ $ aws cloudformation describe-stacks --stack-name udagram-stack
                     "ExportName": "MyUdagramProject-LB-DNSName"
 ```
 
-3. You can connect to the BAstion HOST remotely and ping the WEb Servers for example 
+3. You can connect to the BAstion HOST remotely and ping the WEb Servers for example . See "results" subdirectory on this repository to find screenshoots and some checks performeed.
 
 4. and also you can check that  your Web Servers were installed with NGINX:
 ```sh
 systemctl status nginx
 ```
+
+5. The configuration included a Scaling Up and Scaling down actions on WebServer AutoScalign group. so don't afraid if your ec2 isntances goes to terminated after 5 minutes ( cooldown period ) if you are not using them!!!! ( Nice !!) 
+
 ## Built With
 
 * [Visual Studio Code](http://www.dropwizard.io/1.0.2/docs/) - Used as IDE to code
