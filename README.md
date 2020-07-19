@@ -65,7 +65,7 @@ A step by step series of examples that tell you how to get a development env run
 | webapp-parameters.json | the parameters needed on the stack |
 
 - Diagram in Lucid Chart:
-[![Lucid Chart](https://app.lucidchart.com/invitations/accept/90973ab4-2135-4020-8d22-3028c819afbd)]
+[![Lucid Chart](https://webapp-s3bucket-s3cloudfront-w5u9jy13vbmr.s3-us-west-2.amazonaws.com/Udagram+WebApp+Project+-+Udacity.png)]
 
 - Template Designer in CloudFormation
 [![Template Designer](https://webapp-s3bucket-s3cloudfront-w5u9jy13vbmr.s3-us-west-2.amazonaws.com/webapp-template-designer.png)]
