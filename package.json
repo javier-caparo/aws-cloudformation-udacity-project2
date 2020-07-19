@@ -1,0 +1,26 @@
+{
+  "name": "udagram-web",
+  "version": "1.0.0",
+  "description": "Udagram Web Exampel for Project#2 Udacity DevOps Nanodegree",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfcb853/aws-cloudformation-udacity-project2.git"
+  },
+  "author": "Javier Caparo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jfcb853/aws-cloudformation-udacity-project2/issues"
+  },
+  "homepage": "https://github.com/jfcb853/aws-cloudformation-udacity-project2#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

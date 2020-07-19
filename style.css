@@ -1,0 +1,90 @@
+body {
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #110f0f;
+    margin: 10px;
+}
+
+.carousel-multi-item.v-2 .carousel-inner .carousel-item.active,
+                .carousel-multi-item.v-2 .carousel-item-next,
+                .carousel-multi-item.v-2 .carousel-item-prev {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex; }
+                .carousel-multi-item.v-2 .carousel-item-right.active,
+                .carousel-multi-item.v-2 .carousel-item-next {
+                  -webkit-transform: translateX(50%);
+                  -ms-transform: translateX(50%);
+                  transform: translateX(50%); }
+                .carousel-multi-item.v-2 .carousel-item-left.active,
+                .carousel-multi-item.v-2 .carousel-item-prev {
+                  -webkit-transform: translateX(-50%);
+                  -ms-transform: translateX(-50%);
+                  transform: translateX(-50%); }
+                .carousel-multi-item.v-2 .carousel-item-right,
+                .carousel-multi-item.v-2 .carousel-item-left {
+                  -webkit-transform: translateX(0);
+                  -ms-transform: translateX(0);
+                  transform: translateX(0); }
+.carousel-control-prev, .carousel-control-next{
+    /*background: black;*/
+    width: 4.5% !important;
+    transition: opacity .2s ease-in;
+}
+.carousel-control-next-icon {
+    background-image: url(https://image.flaticon.com/icons/svg/481/481146.svg) !important;
+    transform: rotate(180deg);
+}
+.carousel-control-prev-icon {
+    background-image: url(https://image.flaticon.com/icons/svg/481/481146.svg) !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+.carousel-control-next{right:-70px;}
+.carousel-control-prev{left:-70px;}
+.bisc {
+    color: white;
+    margin-right: 0px;
+    background: -webkit-gradient(linear, right top, left bottom, from(#4c68d7), color-stop(#8a3ab9), color-stop(#cd486b), color-stop(#fb8750), to(#FF9800));
+    background: -webkit-linear-gradient(right top, #4c68d7, #8a3ab9, #cd486b, #fb8750, #FF9800);
+    background: -o-linear-gradient(right top, #4c68d7, #8a3ab9, #cd486b, #fb8750, #FF9800);
+    background: linear-gradient(to left bottom, #4c68d7, #8a3ab9, #cd486b, #fb8750, #FF9800);
+    -webkit-transform: rotate(360deg) scale(1.1);
+    -ms-transform: rotate(360deg) scale(1.1);
+    transform: rotate(360deg) scale(1.1);
+}
+
+/* Subscription Section*/
+.input-grey .input-group-lg>.input-group-prepend>.input-group-text {
+    border-radius: .125rem;
+  }
+
+  .input-grey .form-control {
+    border-radius: .125rem;
+  }
+
+  .input-grey .form-control.form-control-lg {
+    font-size: 1rem;
+  }
+  
+  .form-control:focus {
+    background-color: rgba(255,255,255,.3);
+  }
+
+  .input-grey input::placeholder {
+    color: #fff;
+  }
+
+  .input-grey .input-group-lg>.form-control:not(textarea) {
+    height: calc(1.5em + 1rem + 6px);
+  }
+
+  .social .fab {
+    width: 30px;
+    height: 30px;
+  }
