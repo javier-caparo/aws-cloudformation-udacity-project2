@@ -25,14 +25,10 @@
     },
     {
         "ParameterKey": "InstanceType",
-        "ParameterValue": "t2.small"
+        "ParameterValue": "t3.small"
     },
     {
         "ParameterKey": "WebServerCapacity",
         "ParameterValue": "4"
-    },
-    {
-        "ParameterKey": "KeyPairName",
-        "ParameterValue": "jc-udacity-devops"
-    }   
+    } 
 ]

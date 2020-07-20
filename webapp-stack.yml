@@ -44,8 +44,8 @@ Parameters:
     InstanceType:
         Description: The EC2 instance type of general purpose
         Type: String
-        AllowedValues: [ t2.nano, t2.micro, t2.small, t2.medium, t2.large, t2.xlarge, t2.2xlarge]
-        Default: "t2.small"
+        AllowedValues: [ t3.nano, t3.micro, t3.small, t3.medium, t3.large, t3.xlarge, t3.2xlarge]
+        Default: "t3.small"
 
     WebServerCapacity:
       Default: '4'
@@ -54,11 +54,6 @@ Parameters:
       MinValue: '1'
       MaxValue: '6'
       ConstraintDescription: must be between 1 and 6 EC2 instances.
-    
-    KeyPairName:
-      Description: Name of key-pair (PEM) file.
-      Type: String
-      Default: 'jc-udacity-devops'
 
 ####### RESOURCES #######
 Resources:
@@ -454,7 +449,7 @@ Resources:
                     cp *.js /var/www/html/
                     systemctl restart nginx
             ImageId: ami-003634241a8fcdec0
-            KeyName: !Ref KeyPairName
+            KeyName: "jc-udacity-devops"
             IamInstanceProfile: !Ref ProfileWithRolesForOurApp
             SecurityGroups:
             -   Ref: WebServerSecGroup
@@ -615,7 +610,7 @@ Resources:
           AssociatePublicIpAddress: true
           ImageId: ami-0a243dbef00e96192
           InstanceType: t2.micro
-          KeyName: !Ref KeyPairName
+          KeyName: "jc-udacity-devops"
           IamInstanceProfile: 
             Ref: ProfileWithRolesForOurApp
           SecurityGroups:

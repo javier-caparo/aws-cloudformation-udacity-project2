@@ -48,11 +48,9 @@ app.js --> a small javascript code to control the carousel images.
 ``` 
 4. Edit the "webapp-stack.yml" file and update/replace the line 449 with the full S3 path and file name of website zip. See AWS S3 console.
 
-5. Create a Key Pair in AWS EC2 and take note of the name assigned to the key pair. Alternatively, upload the sample PEM file included in this repo. The "KeyPair" is requested as parameter in "webapp-parameters.json" , so don't forget incude in.
+5. The instance type by default is "t3.small' for the Web Servers. The bastion host is just a "t2.micro". ( Note: in my first delivered I was only made a wrong typo writtting t2 instead f t3)
 
-6. Edit the "webapp-parameters.json"  file and update/replace the value of KeyPairName with the key pair name created in the previous step.
-
-
+6. Create a Key Pair in AWS EC2 and take note of the name assigned to the key pair. Alternatively, upload the sample PEM file included in this repo. The "KeyPair" is NOT requested as parameter in "webapp-parameters.json" , so don't forget modifed the "webapp-stack.yml" file on the lines where said 'KeyName' to add your 'keypair name' created..
 
 ### AWS CLoudFormation Templates Description
 
@@ -93,6 +91,16 @@ Note:
 ```sh
 > chmod +x *.sh
 ```
+
+## Results:
+-  WebApp URL  created runing the stack for revision  :  
+http://udagr-webap-1ngk6hnavzbqs-361472458.us-west-2.elb.amazonaws.com/
+
+
+- Screenshot of the webApp
+[![WebApp Screenshot](https://webapp-s3bucket-s3cloudfront-w5u9jy13vbmr.s3-us-west-2.amazonaws.com/udagram+webapp+generated.jpg)]
+
+
 
 ## Tests
 
