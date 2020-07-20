@@ -105,7 +105,7 @@ http://udagr-webap-1ngk6hnavzbqs-361472458.us-west-2.elb.amazonaws.com/
 ## Tests
 
 1. Check the results of the execution of your script in AWS CloudFormation Console ( or aws cli). Must be " STATUS : CREATE COMPLETE"
-* using aws cli (exmaple):
+* using aws cli (example):
 ```sh
 $ aws cloudformation describe-stacks --stack-name udagram-stack
 ```
