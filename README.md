@@ -113,7 +113,7 @@ $ aws cloudformation describe-stacks --stack-name udagram-stack
 2. On the output results  you will be the htpp link to the "udagram webapp" created: Example:
 ```sh
 "OutputKey": "WebAppLoadBalancerDNSName",
-                    "OutputValue": "http://udagr-WebAp-S2YEAO61BWAI-33908833.us-west-2.elb.amazonaws.com",
+                    "OutputValue": "http://udagr-webap-1ngk6hnavzbqs-361472458.us-west-2.elb.amazonaws.com/",
                     "Description": "DNS name or Public URL of the Load Balancer",
                     "ExportName": "MyUdagramProject-LB-DNSName"
 ```
