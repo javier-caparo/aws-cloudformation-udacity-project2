@@ -449,7 +449,6 @@ Resources:
                     cp *.js /var/www/html/
                     systemctl restart nginx
             ImageId: ami-003634241a8fcdec0
-            KeyName: "jc-udacity-devops"
             IamInstanceProfile: !Ref ProfileWithRolesForOurApp
             SecurityGroups:
             -   Ref: WebServerSecGroup

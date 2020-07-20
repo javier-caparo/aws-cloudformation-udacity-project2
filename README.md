@@ -94,7 +94,7 @@ Note:
 
 ## Results:
 -  WebApp URL  created runing the stack for revision  :  
-http://udagr-webap-1ngk6hnavzbqs-361472458.us-west-2.elb.amazonaws.com/
+http://udagr-WebAp-QFE08DBCO3SE-2101749222.us-west-2.elb.amazonaws.com
 
 
 - Screenshot of the webApp
