@@ -50,7 +50,7 @@ app.js --> a small javascript code to control the carousel images.
 
 5. The instance type by default is "t3.small' for the Web Servers. The bastion host is just a "t2.micro". ( Note: in my first delivered I was only made a wrong typo writtting t2 instead f t3)
 
-6. Create a Key Pair in AWS EC2 and take note of the name assigned to the key pair. Alternatively, upload the sample PEM file included in this repo. The "KeyPair" is NOT requested as parameter in "webapp-parameters.json" , so don't forget modifed the "webapp-stack.yml" file on the lines where said 'KeyName' to add your 'keypair name' created..
+6.  The "KeyPair" is NOT requested as parameter in "webapp-parameters.json" neither on webapp template ( "webapp-stack.template). Note: you need to use your own KeyPair  on the BastionHost, which will be the server that we will use to entrace as an administrator and from there reach our servers.
 
 ### AWS CLoudFormation Templates Description
 
